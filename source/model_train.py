@@ -85,7 +85,7 @@ class MyTrainModel:
         model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy']) 
         history = model.fit(self.x_train, self.Y_train, epochs=10, batch_size=10, validation_split=0.2)
 
-        model.save("posneg_model.h5")
+        # model.save("posneg_model.h5")
 
         self.model = model
 

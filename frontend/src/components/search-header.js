@@ -18,9 +18,14 @@ const SearchHeader = (props) => {
     }
 
     return (
-        <div>
-            <input type="text" placeholder="검색어를 입력해주세요." onChange={searchKeywordChange} />
-            <button onClick={searchClicked}>검색</button>
+        <div className="search-header">
+            <div className="title">
+                <h1>📊Trender</h1>
+            </div>
+            <div className="search-bar">
+                <input type="text" placeholder="검색어를 입력해주세요." onChange={searchKeywordChange} />
+                <button onClick={searchClicked}>검색</button>
+            </div>
         </div>
     );
 }
