@@ -55,7 +55,8 @@ function App() {
                                                 count={count} 
                                                 newsLink={newsLink} 
                                                 predictVal={predictVal} 
-                                                newsHead={newsHead}/>
+                                                newsHead={newsHead}
+                                                query={key}/>
         )
       }
     </div>

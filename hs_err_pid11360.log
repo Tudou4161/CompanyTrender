@@ -1,0 +1,354 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_UNCAUGHT_CXX_EXCEPTION (0xe06d7363) at pc=0x00007ffde77b4f69, pid=11360, tid=0x0000000000002f74
+#
+# JRE version: Java(TM) SE Runtime Environment (8.0_311-b11) (build 1.8.0_311-b11)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.311-b11 mixed mode windows-amd64 compressed oops)
+# Problematic frame:
+# C  [KERNELBASE.dll+0x34f69]
+#
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000002ce5e90b000):  JavaThread "Thread-1" daemon [_thread_in_native, id=12148, stack(0x000000ef2eed0000,0x000000ef2f0c0000)]
+
+siginfo: ExceptionCode=0xe06d7363, ExceptionInformation=0x0000000019930520 0x000000ef2f0bb6f0 0x00007ffd40a07158 0x00007ffd40990000 
+
+Registers:
+RAX=0x000002ce4ab61520, RBX=0x00007ffd40a07158, RCX=0x000002ce5d7b7d60, RDX=0x000002ce63464c40
+RSP=0x000000ef2f0bb490, RBP=0x000000ef2f0bb6d0, RSI=0x000000ef2f0bb6f0, RDI=0x0000000019930520
+R8 =0x000002cee3008a69, R9 =0x022754a439170586, R10=0x0000000002000002, R11=0x00007ffd8c02bdf1
+R12=0x000002ce5d878e80, R13=0x000000ef2f0bb7c0, R14=0x000002ce4ba054d0, R15=0x000002ce5d878f40
+RIP=0x00007ffde77b4f69, EFLAGS=0x0000000000000206
+
+Top of Stack: (sp=0x000000ef2f0bb490)
+0x000000ef2f0bb490:   0000000000000000 00007ffd40a07158
+0x000000ef2f0bb4a0:   000000ef2f0bb6f0 000000ef2f0bb6d0
+0x000000ef2f0bb4b0:   00000001e06d7363 0000000000000000
+0x000000ef2f0bb4c0:   00007ffde77b4f69 0000000000000004
+0x000000ef2f0bb4d0:   0000000019930520 000000ef2f0bb6f0
+0x000000ef2f0bb4e0:   00007ffd40a07158 00007ffd40990000
+0x000000ef2f0bb4f0:   000000ef2f0bb7c0 000002ce5d878e80
+0x000000ef2f0bb500:   000000ef2f0bb6f0 000000ef2f0bb6d0
+0x000000ef2f0bb510:   000000ef2f0bb590 00007ffde9e04a5f
+0x000000ef2f0bb520:   0000000019930520 000002ce00000000
+0x000000ef2f0bb530:   0000000000000000 00007ffd409992ca
+0x000000ef2f0bb540:   00007ffd40a0e000 00007ffd40990000
+0x000000ef2f0bb550:   00007200ba296c3d 0000000000000000
+0x000000ef2f0bb560:   00007ffd40a07158 00007ffdd51d6480
+0x000000ef2f0bb570:   0000000000000000 000002ce5d881a30
+0x000000ef2f0bb580:   000000ef2f0bb6f0 00007ffd409b1380 
+
+Instructions: (pc=0x00007ffde77b4f69)
+0x00007ffde77b4f49:   8b d1 44 0f 47 c0 44 89 44 24 38 49 c1 e0 03 e8
+0x00007ffde77b4f59:   1a d5 05 00 48 8d 4c 24 20 48 ff 15 8f 9d 18 00
+0x00007ffde77b4f69:   0f 1f 44 00 00 48 8b 8c 24 c0 00 00 00 48 33 cc
+0x00007ffde77b4f79:   e8 52 97 05 00 48 81 c4 d8 00 00 00 c3 cc 83 64 
+
+
+Register to memory mapping:
+
+RAX=0x000002ce4ab61520 is an unknown value
+RBX=0x00007ffd40a07158 is an unknown value
+RCX=0x000002ce5d7b7d60 is an unknown value
+RDX=0x000002ce63464c40 is an unknown value
+RSP=0x000000ef2f0bb490 is pointing into the stack for thread: 0x000002ce5e90b000
+RBP=0x000000ef2f0bb6d0 is pointing into the stack for thread: 0x000002ce5e90b000
+RSI=0x000000ef2f0bb6f0 is pointing into the stack for thread: 0x000002ce5e90b000
+RDI=0x0000000019930520 is an unknown value
+R8 =0x000002cee3008a69 is an unknown value
+R9 =0x022754a439170586 is an unknown value
+R10=0x0000000002000002 is an unknown value
+R11=0x00007ffd8c02bdf1 is an unknown value
+R12=0x000002ce5d878e80 is an unknown value
+R13=0x000000ef2f0bb7c0 is pointing into the stack for thread: 0x000002ce5e90b000
+R14=0x000002ce4ba054d0 is an unknown value
+R15=0x000002ce5d878f40 is an unknown value
+
+
+Stack: [0x000000ef2eed0000,0x000000ef2f0c0000],  sp=0x000000ef2f0bb490,  free space=1965k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [KERNELBASE.dll+0x34f69]
+C  [VCRUNTIME140.dll+0x6480]
+C  0x00007ffd409d2484
+C  0x00007ffd409c49eb
+C  0x000002ce63d5a02e
+
+Java frames: (J=compiled Java code, j=interpreted, Vv=VM code)
+j  org.jpype.manager.TypeFactoryNative.newWrapper(JJ)V+0
+j  org.jpype.JPypeContext.newWrapper(J)V+16
+v  ~StubRoutines::call_stub
+j  org.jpype.manager.TypeFactoryNative.newWrapper(JJ)V+0
+j  org.jpype.JPypeContext.newWrapper(J)V+16
+v  ~StubRoutines::call_stub
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+=>0x000002ce5e90b000 JavaThread "Thread-1" daemon [_thread_in_native, id=12148, stack(0x000000ef2eed0000,0x000000ef2f0c0000)]
+  0x000002ce5e90a800 JavaThread "Python Reference Queue" daemon [_thread_blocked, id=12440, stack(0x000000ef31d50000,0x000000ef31f40000)]
+  0x000002ce5e909800 JavaThread "Service Thread" daemon [_thread_blocked, id=1436, stack(0x000000ef31780000,0x000000ef31970000)]
+  0x000002ce5e909000 JavaThread "C1 CompilerThread3" daemon [_thread_blocked, id=7464, stack(0x000000ef31590000,0x000000ef31780000)]
+  0x000002ce5e908000 JavaThread "C2 CompilerThread2" daemon [_thread_blocked, id=16644, stack(0x000000ef313a0000,0x000000ef31590000)]
+  0x000002ce5e906800 JavaThread "C2 CompilerThread1" daemon [_thread_blocked, id=2356, stack(0x000000ef311b0000,0x000000ef313a0000)]
+  0x000002ce5e905000 JavaThread "C2 CompilerThread0" daemon [_thread_blocked, id=14344, stack(0x000000ef30fc0000,0x000000ef311b0000)]
+  0x000002ce5e906000 JavaThread "Attach Listener" daemon [_thread_blocked, id=11468, stack(0x000000ef30dd0000,0x000000ef30fc0000)]
+  0x000002ce5e907800 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=3268, stack(0x000000ef30be0000,0x000000ef30dd0000)]
+  0x000002ce5e8fd800 JavaThread "Finalizer" daemon [_thread_blocked, id=12176, stack(0x000000ef309f0000,0x000000ef30be0000)]
+  0x000002ce5e904800 JavaThread "Reference Handler" daemon [_thread_blocked, id=1412, stack(0x000000ef30800000,0x000000ef309f0000)]
+  0x000002ce5e8fd000 JavaThread "main" [_thread_in_native, id=19104, stack(0x000000ef2eaf0000,0x000000ef2ece0000)]
+
+Other Threads:
+  0x000002ce762d4000 VMThread [stack: 0x000000ef30610000,0x000000ef30800000] [id=8992]
+  0x000002ce61c3b800 WatcherThread [stack: 0x000000ef31970000,0x000000ef31b60000] [id=13564]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+heap address: 0x00000000c0000000, size: 1024 MB, Compressed Oops mode: 32-bit
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 3
+Compressed class space size: 1073741824 Address: 0x0000000100000000
+
+Heap:
+ PSYoungGen      total 38400K, used 10538K [0x00000000eab00000, 0x00000000ed580000, 0x0000000100000000)
+  eden space 33280K, 31% used [0x00000000eab00000,0x00000000eb54aa78,0x00000000ecb80000)
+  from space 5120K, 0% used [0x00000000ed080000,0x00000000ed080000,0x00000000ed580000)
+  to   space 5120K, 0% used [0x00000000ecb80000,0x00000000ecb80000,0x00000000ed080000)
+ ParOldGen       total 87552K, used 0K [0x00000000c0000000, 0x00000000c5580000, 0x00000000eab00000)
+  object space 87552K, 0% used [0x00000000c0000000,0x00000000c0000000,0x00000000c5580000)
+ Metaspace       used 4412K, capacity 5056K, committed 5248K, reserved 1056768K
+  class space    used 527K, capacity 608K, committed 640K, reserved 1048576K
+
+Card table byte_map: [0x000002ce73100000,0x000002ce73310000] byte_map_base: 0x000002ce72b00000
+
+Marking Bits: (ParMarkBitMap*) 0x0000000051478030
+ Begin Bits: [0x000002ce73470000, 0x000002ce74470000)
+ End Bits:   [0x000002ce74470000, 0x000002ce75470000)
+
+Polling page: 0x000002ce5d8c0000
+
+CodeCache: size=245760Kb used=1665Kb max_used=1694Kb free=244094Kb
+ bounds [0x000002ce63d40000, 0x000002ce63fb0000, 0x000002ce72d40000]
+ total_blobs=573 nmethods=279 adapters=207
+ compilation: enabled
+
+Compilation events (10 events):
+Event: 0.390 Thread 0x000002ce5e909000  275       3       java.util.ArrayList$Itr::hasNext (20 bytes)
+Event: 0.390 Thread 0x000002ce5e909000 nmethod 275 0x000002ce63ed5750 code [0x000002ce63ed58a0, 0x000002ce63ed5a78]
+Event: 0.392 Thread 0x000002ce5e908000  276       4       java.util.TreeMap::parentOf (13 bytes)
+Event: 0.392 Thread 0x000002ce5e909000  277       3       java.util.LinkedList$ListItr::hasNext (20 bytes)
+Event: 0.392 Thread 0x000002ce5e908000 nmethod 276 0x000002ce63ebf7d0 code [0x000002ce63ebf900, 0x000002ce63ebf958]
+Event: 0.392 Thread 0x000002ce5e909000 nmethod 277 0x000002ce63ed5390 code [0x000002ce63ed54e0, 0x000002ce63ed5698]
+Event: 0.392 Thread 0x000002ce5e909000  278       3       java.util.HashMap::put (13 bytes)
+Event: 0.392 Thread 0x000002ce5e909000 nmethod 278 0x000002ce63eda250 code [0x000002ce63eda3e0, 0x000002ce63eda7a0]
+Event: 0.392 Thread 0x000002ce5e909000  279       3       java.util.AbstractList::<init> (10 bytes)
+Event: 0.392 Thread 0x000002ce5e909000 nmethod 279 0x000002ce63ed9dd0 code [0x000002ce63ed9f40, 0x000002ce63eda158]
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (7 events):
+Event: 0.359 Thread 0x000002ce5e90b000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x000002ce63ec0154 method=java.util.LinkedHashMap$LinkedHashIterator.hasNext()Z @ 4
+Event: 0.366 Thread 0x000002ce5e90b000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x000002ce63ec8a5c method=com.sun.nio.zipfs.ZipFileSystem.getParent([B)[B @ 21
+Event: 0.367 Thread 0x000002ce5e90b000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x000002ce63ec781c method=java.util.Arrays.equals([B[B)Z @ 2
+Event: 0.369 Thread 0x000002ce5e90b000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x000002ce63ec7e10 method=java.util.Arrays.equals([B[B)Z @ 2
+Event: 0.375 Thread 0x000002ce5e90b000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x000002ce63ebb6b4 method=java.util.Arrays.hashCode([B)I @ 1
+Event: 0.376 Thread 0x000002ce5e90b000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x000002ce63ebc46c method=java.util.LinkedHashMap.linkNodeLast(Ljava/util/LinkedHashMap$Entry;)V @ 11
+Event: 0.384 Thread 0x000002ce5e90b000 Uncommon trap: reason=class_check action=maybe_recompile pc=0x000002ce63ebebc0 method=java.util.LinkedHashMap.afterNodeInsertion(Z)V @ 15
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (10 events):
+Event: 0.142 Thread 0x000002ce5e8fd000 Exception <a 'sun/nio/fs/WindowsException'> (0x00000000eada7780) thrown at [C:\jenkins\workspace\8-2-build-windows-amd64-cygwin\jdk8u311\1894\hotspot\src\share\vm\prims\jni.cpp, line 710]
+Event: 0.143 Thread 0x000002ce5e8fd000 Exception <a 'sun/nio/fs/WindowsException'> (0x00000000eada8dd0) thrown at [C:\jenkins\workspace\8-2-build-windows-amd64-cygwin\jdk8u311\1894\hotspot\src\share\vm\prims\jni.cpp, line 710]
+Event: 0.144 Thread 0x000002ce5e8fd000 Exception <a 'sun/nio/fs/WindowsException'> (0x00000000eada95e8) thrown at [C:\jenkins\workspace\8-2-build-windows-amd64-cygwin\jdk8u311\1894\hotspot\src\share\vm\prims\jni.cpp, line 710]
+Event: 0.257 Thread 0x000002ce5e8fd000 Exception <a 'sun/nio/fs/WindowsException'> (0x00000000eade3350) thrown at [C:\jenkins\workspace\8-2-build-windows-amd64-cygwin\jdk8u311\1894\hotspot\src\share\vm\prims\jni.cpp, line 710]
+Event: 0.268 Thread 0x000002ce5e90b000 Exception <a 'java/security/PrivilegedActionException'> (0x00000000eae62fc8) thrown at [C:\jenkins\workspace\8-2-build-windows-amd64-cygwin\jdk8u311\1894\hotspot\src\share\vm\prims\jvm.cpp, line 1523]
+Event: 0.268 Thread 0x000002ce5e90b000 Exception <a 'java/security/PrivilegedActionException'> (0x00000000eae631d8) thrown at [C:\jenkins\workspace\8-2-build-windows-amd64-cygwin\jdk8u311\1894\hotspot\src\share\vm\prims\jvm.cpp, line 1523]
+Event: 0.268 Thread 0x000002ce5e90b000 Exception <a 'java/security/PrivilegedActionException'> (0x00000000eae67030) thrown at [C:\jenkins\workspace\8-2-build-windows-amd64-cygwin\jdk8u311\1894\hotspot\src\share\vm\prims\jvm.cpp, line 1523]
+Event: 0.268 Thread 0x000002ce5e90b000 Exception <a 'java/security/PrivilegedActionException'> (0x00000000eae67240) thrown at [C:\jenkins\workspace\8-2-build-windows-amd64-cygwin\jdk8u311\1894\hotspot\src\share\vm\prims\jvm.cpp, line 1523]
+Event: 0.375 Thread 0x000002ce5e90b000 Implicit null exception at 0x000002ce63ebb592 to 0x000002ce63ebb699
+Event: 0.376 Thread 0x000002ce5e90b000 Implicit null exception at 0x000002ce63ebbe43 to 0x000002ce63ebc44d
+
+Events (10 events):
+Event: 0.391 loading class java/util/TreeMap$KeySet
+Event: 0.391 loading class java/util/TreeMap$KeySet done
+Event: 0.391 loading class java/util/TreeMap$KeyIterator
+Event: 0.391 loading class java/util/TreeMap$PrivateEntryIterator
+Event: 0.391 loading class java/util/TreeMap$PrivateEntryIterator done
+Event: 0.391 loading class java/util/TreeMap$KeyIterator done
+Event: 0.391 loading class java/sql/DriverManager
+Event: 0.391 loading class java/sql/DriverManager done
+Event: 0.391 loading class java/lang/CloneNotSupportedException
+Event: 0.391 loading class java/lang/CloneNotSupportedException done
+
+
+Dynamic libraries:
+0x00007ff7ff2c0000 - 0x00007ff7ff2dc000 	C:\Python39\python.exe
+0x00007ffde9dd0000 - 0x00007ffde9fc5000 	C:\Windows\SYSTEM32\ntdll.dll
+0x00007ffde8150000 - 0x00007ffde820e000 	C:\Windows\System32\KERNEL32.DLL
+0x00007ffde7780000 - 0x00007ffde7a48000 	C:\Windows\System32\KERNELBASE.dll
+0x00007ffde7a50000 - 0x00007ffde7b50000 	C:\Windows\System32\ucrtbase.dll
+0x00007ffd8bdf0000 - 0x00007ffd8c262000 	C:\Python39\python39.dll
+0x00007ffdd51d0000 - 0x00007ffdd51eb000 	C:\Python39\VCRUNTIME140.dll
+0x00007ffde9cb0000 - 0x00007ffde9d1b000 	C:\Windows\System32\WS2_32.dll
+0x00007ffde8210000 - 0x00007ffde833a000 	C:\Windows\System32\RPCRT4.dll
+0x00007ffde8340000 - 0x00007ffde83ec000 	C:\Windows\System32\ADVAPI32.dll
+0x00007ffde92f0000 - 0x00007ffde938e000 	C:\Windows\System32\msvcrt.dll
+0x00007ffde0c40000 - 0x00007ffde0c4a000 	C:\Windows\SYSTEM32\VERSION.dll
+0x00007ffde8dc0000 - 0x00007ffde8e5b000 	C:\Windows\System32\sechost.dll
+0x00007ffde6e20000 - 0x00007ffde6e38000 	C:\Windows\SYSTEM32\CRYPTSP.dll
+0x00007ffde6550000 - 0x00007ffde6584000 	C:\Windows\system32\rsaenh.dll
+0x00007ffde7b50000 - 0x00007ffde7b77000 	C:\Windows\System32\bcrypt.dll
+0x00007ffde6e40000 - 0x00007ffde6e4c000 	C:\Windows\SYSTEM32\CRYPTBASE.dll
+0x00007ffde7b80000 - 0x00007ffde7c03000 	C:\Windows\System32\bcryptPrimitives.dll
+0x00007ffde0e80000 - 0x00007ffde0e8f000 	C:\Python39\python3.DLL
+0x00007ffddcf90000 - 0x00007ffddcf99000 	C:\Python39\DLLs\_queue.pyd
+0x00007ffd8d730000 - 0x00007ffd8d844000 	C:\Python39\DLLs\unicodedata.pyd
+0x00007ffdd2680000 - 0x00007ffdd2696000 	C:\Python39\DLLs\_socket.pyd
+0x00007ffde68c0000 - 0x00007ffde68fb000 	C:\Windows\SYSTEM32\IPHLPAPI.DLL
+0x00007ffddfe10000 - 0x00007ffddfe1a000 	C:\Python39\DLLs\select.pyd
+0x00007ffd9bec0000 - 0x00007ffd9bf03000 	C:\Python39\DLLs\_decimal.pyd
+0x00007ffd9bb50000 - 0x00007ffd9bb77000 	C:\Python39\DLLs\_ssl.pyd
+0x00007ffde7c60000 - 0x00007ffde7db6000 	C:\Windows\System32\CRYPT32.dll
+0x00007ffd91190000 - 0x00007ffd9123c000 	C:\Python39\DLLs\libssl-1_1.dll
+0x00007ffd88c70000 - 0x00007ffd88fb8000 	C:\Python39\DLLs\libcrypto-1_1.dll
+0x00007ffde8c10000 - 0x00007ffde8db1000 	C:\Windows\System32\USER32.dll
+0x00007ffde76a0000 - 0x00007ffde76c2000 	C:\Windows\System32\win32u.dll
+0x00007ffde80c0000 - 0x00007ffde80eb000 	C:\Windows\System32\GDI32.dll
+0x00007ffde74f0000 - 0x00007ffde75fb000 	C:\Windows\System32\gdi32full.dll
+0x00007ffde7600000 - 0x00007ffde769d000 	C:\Windows\System32\msvcp_win.dll
+0x00007ffde9ad0000 - 0x00007ffde9b00000 	C:\Windows\System32\IMM32.DLL
+0x00007ffde0fc0000 - 0x00007ffde0ff1000 	C:\Python39\DLLs\pyexpat.pyd
+0x00007ffd9bea0000 - 0x00007ffd9beb8000 	C:\Python39\DLLs\_bz2.pyd
+0x00007ffd9bb80000 - 0x00007ffd9bbaa000 	C:\Python39\DLLs\_lzma.pyd
+0x00007ffde04d0000 - 0x00007ffde04f6000 	C:\Python39\lib\site-packages\win32\win32api.pyd
+0x00007ffde9390000 - 0x00007ffde9acf000 	C:\Windows\System32\SHELL32.dll
+0x00007ffde0200000 - 0x00007ffde0228000 	C:\Python39\lib\site-packages\pywin32_system32\pywintypes39.dll
+0x00007ffde83f0000 - 0x00007ffde851a000 	C:\Windows\System32\ole32.dll
+0x00007ffde8ee0000 - 0x00007ffde9235000 	C:\Windows\System32\combase.dll
+0x00007ffde89a0000 - 0x00007ffde8a6d000 	C:\Windows\System32\OLEAUT32.dll
+0x00007ffdd2c60000 - 0x00007ffdd2c6c000 	C:\Windows\SYSTEM32\secur32.dll
+0x00007ffde73e0000 - 0x00007ffde7411000 	C:\Windows\SYSTEM32\SSPICLI.DLL
+0x00007ffde3080000 - 0x00007ffde3089000 	C:\Python39\lib\site-packages\win32\_win32sysloader.pyd
+0x00007ffdcef90000 - 0x00007ffdcf027000 	C:\Python39\lib\site-packages\pywin32_system32\pythoncom39.dll
+0x00007ffde5310000 - 0x00007ffde5322000 	C:\Windows\SYSTEM32\kernel.appcore.dll
+0x00007ffde4f30000 - 0x00007ffde4fce000 	C:\Windows\system32\uxtheme.dll
+0x00007ffdd5a60000 - 0x00007ffdd5c4b000 	C:\Windows\SYSTEM32\urlmon.dll
+0x00007ffdd66c0000 - 0x00007ffdd6970000 	C:\Windows\SYSTEM32\iertutil.dll
+0x00007ffde6a20000 - 0x00007ffde6a2c000 	C:\Windows\SYSTEM32\netutils.dll
+0x00007ffdd5a10000 - 0x00007ffdd5a38000 	C:\Windows\SYSTEM32\srvcli.dll
+0x00007ffde7f80000 - 0x00007ffde802d000 	C:\Windows\System32\shcore.dll
+0x00007ffdd26a0000 - 0x00007ffdd26c2000 	C:\Python39\DLLs\_ctypes.pyd
+0x00007ffddff70000 - 0x00007ffddff7b000 	C:\Python39\DLLs\libffi-7.dll
+0x00007ffdced80000 - 0x00007ffdceddb000 	c:\Users\dudtj\.vscode\extensions\ms-python.python-2021.11.1422169775\pythonFiles\lib\python\debugpy\_vendored\pydevd\_pydevd_bundle\pydevd_cython.cp39-win_amd64.pyd
+0x00007ffde6c30000 - 0x00007ffde6c9a000 	C:\Windows\system32\mswsock.dll
+0x00007ffde2ae0000 - 0x00007ffde2aec000 	c:\Users\dudtj\.vscode\extensions\ms-python.python-2021.11.1422169775\pythonFiles\lib\python\debugpy\_vendored\pydevd\pydevd_attach_to_process\attach_amd64.dll
+0x00007ffddfee0000 - 0x00007ffddfeec000 	C:\Python39\VCRUNTIME140_1.dll
+0x00007ffdd2290000 - 0x00007ffdd231d000 	C:\Windows\SYSTEM32\MSVCP140.dll
+0x00007ffddfe50000 - 0x00007ffddfe59000 	C:\Windows\SYSTEM32\msvcp140_1.dll
+0x00007ffd40a20000 - 0x00007ffd75e24000 	C:\Python39\lib\site-packages\tensorflow\python\_pywrap_tensorflow_internal.pyd
+0x00007ffde8a70000 - 0x00007ffde8a78000 	C:\Windows\System32\Normaliz.dll
+0x00007ffde8e80000 - 0x00007ffde8ed5000 	C:\Windows\System32\SHLWAPI.dll
+0x00007ffdd2740000 - 0x00007ffdd2924000 	C:\Windows\SYSTEM32\dbghelp.dll
+0x0000000067780000 - 0x0000000069533000 	C:\Python39\lib\site-packages\numpy\.libs\libopenblas.XWYDX2IKJW2NMTWSFYNGFUWKQU3LYTCZ.gfortran-win_amd64.dll
+0x00007ffd89f30000 - 0x00007ffd8a224000 	C:\Python39\lib\site-packages\numpy\core\_multiarray_umath.cp39-win_amd64.pyd
+0x00007ffdd2510000 - 0x00007ffdd2530000 	C:\Python39\lib\site-packages\numpy\core\_multiarray_tests.cp39-win_amd64.pyd
+0x00007ffdde1c0000 - 0x00007ffdde1c9000 	C:\Python39\lib\site-packages\numpy\linalg\lapack_lite.cp39-win_amd64.pyd
+0x00007ffdcb320000 - 0x00007ffdcb34a000 	C:\Python39\lib\site-packages\numpy\linalg\_umath_linalg.cp39-win_amd64.pyd
+0x00007ffdcafe0000 - 0x00007ffdcb000000 	C:\Python39\lib\site-packages\numpy\fft\_pocketfft_internal.cp39-win_amd64.pyd
+0x00007ffd9bf10000 - 0x00007ffd9bfa4000 	C:\Python39\lib\site-packages\numpy\random\mtrand.cp39-win_amd64.pyd
+0x00007ffdc7fc0000 - 0x00007ffdc7fe9000 	C:\Python39\lib\site-packages\numpy\random\bit_generator.cp39-win_amd64.pyd
+0x00007ffdb5fd0000 - 0x00007ffdb6001000 	C:\Python39\lib\site-packages\numpy\random\_common.cp39-win_amd64.pyd
+0x00007ffdb5ca0000 - 0x00007ffdb5cb3000 	C:\Python39\DLLs\_hashlib.pyd
+0x00007ffdb5c50000 - 0x00007ffdb5c92000 	C:\Python39\lib\site-packages\numpy\random\_bounded_integers.cp39-win_amd64.pyd
+0x00007ffdb5650000 - 0x00007ffdb5668000 	C:\Python39\lib\site-packages\numpy\random\_mt19937.cp39-win_amd64.pyd
+0x00007ffdb5630000 - 0x00007ffdb5647000 	C:\Python39\lib\site-packages\numpy\random\_philox.cp39-win_amd64.pyd
+0x00007ffdb37f0000 - 0x00007ffdb3809000 	C:\Python39\lib\site-packages\numpy\random\_pcg64.cp39-win_amd64.pyd
+0x00007ffdb37d0000 - 0x00007ffdb37e2000 	C:\Python39\lib\site-packages\numpy\random\_sfc64.cp39-win_amd64.pyd
+0x00007ffd999e0000 - 0x00007ffd99a8d000 	C:\Python39\lib\site-packages\numpy\random\_generator.cp39-win_amd64.pyd
+0x00007ffdb37b0000 - 0x00007ffdb37cd000 	C:\Python39\lib\site-packages\google\protobuf\internal\_api_implementation.cp39-win_amd64.pyd
+0x00007ffd8b4a0000 - 0x00007ffd8b62d000 	C:\Python39\lib\site-packages\google\protobuf\pyext\_message.cp39-win_amd64.pyd
+0x00007ffd88650000 - 0x00007ffd88c66000 	C:\Python39\lib\site-packages\tensorflow\python\_pywrap_tfe.pyd
+0x00007ffd882e0000 - 0x00007ffd88646000 	C:\Python39\lib\site-packages\tensorflow\python\platform\_pywrap_tf2.pyd
+0x00007ffd87cd0000 - 0x00007ffd882d6000 	C:\Python39\lib\site-packages\tensorflow\python\client\_pywrap_tf_session.pyd
+0x00007ffdde150000 - 0x00007ffdde15e000 	C:\Python39\lib\site-packages\wrapt\_wrappers.cp39-win_amd64.pyd
+0x00007ffdb3110000 - 0x00007ffdb313d000 	C:\Python39\lib\site-packages\tensorflow\python\util\_pywrap_utils.pyd
+0x00007ffdb30f0000 - 0x00007ffdb3109000 	C:\Python39\lib\site-packages\tensorflow\python\util\_pywrap_nest.pyd
+0x00007ffd89c90000 - 0x00007ffd89f30000 	C:\Python39\lib\site-packages\tensorflow\python\_pywrap_py_exception_registry.pyd
+0x00007ffd87a30000 - 0x00007ffd87cd0000 	C:\Python39\lib\site-packages\tensorflow\python\framework\_dtypes.pyd
+0x00007ffdb30d0000 - 0x00007ffdb30e8000 	C:\Python39\lib\site-packages\tensorflow\python\lib\core\_pywrap_bfloat16.pyd
+0x00007ffd876c0000 - 0x00007ffd87a2a000 	C:\Python39\lib\site-packages\tensorflow\python\profiler\internal\_pywrap_traceme.pyd
+0x00007ffd9efd0000 - 0x00007ffd9f007000 	C:\Python39\lib\site-packages\tensorflow\python\framework\_pywrap_python_api_dispatcher.pyd
+0x00007ffd87450000 - 0x00007ffd876b3000 	C:\Python39\lib\site-packages\tensorflow\python\util\_tf_stack.pyd
+0x00007ffd870e0000 - 0x00007ffd87446000 	C:\Python39\lib\site-packages\tensorflow\python\framework\_op_def_registry.pyd
+0x00007ffd86a20000 - 0x00007ffd86e08000 	C:\Python39\lib\site-packages\tensorflow\python\framework\_proto_comparators.pyd
+0x00007ffd866b0000 - 0x00007ffd86a1f000 	C:\Python39\lib\site-packages\tensorflow\python\data\experimental\service\_pywrap_server_lib.pyd
+0x00007ffd86130000 - 0x00007ffd866a9000 	C:\Python39\lib\site-packages\tensorflow\python\data\experimental\service\_pywrap_utils.pyd
+0x00007ffddcc20000 - 0x00007ffddcc29000 	C:\Python39\DLLs\_uuid.pyd
+0x00007ffd85db0000 - 0x00007ffd86128000 	C:\Python39\lib\site-packages\tensorflow\python\lib\io\_pywrap_file_io.pyd
+0x00007ffd9efb0000 - 0x00007ffd9efc9000 	C:\Python39\lib\site-packages\tensorflow\python\util\_pywrap_determinism.pyd
+0x00007ffd9ef90000 - 0x00007ffd9efa9000 	C:\Python39\lib\site-packages\tensorflow\python\util\_pywrap_tensor_float_32_execution.pyd
+0x00007ffd85a20000 - 0x00007ffd85da1000 	C:\Python39\lib\site-packages\tensorflow\python\lib\io\_pywrap_record_io.pyd
+0x00007ffd856b0000 - 0x00007ffd85a1c000 	C:\Python39\lib\site-packages\tensorflow\python\saved_model\pywrap_saved_model.pyd
+0x00007ffd852d0000 - 0x00007ffd856ae000 	C:\Python39\lib\site-packages\tensorflow\python\util\_pywrap_checkpoint_reader.pyd
+0x00007ffd84f50000 - 0x00007ffd852c2000 	C:\Python39\lib\site-packages\tensorflow\python\_pywrap_parallel_device.pyd
+0x00007ffd9c310000 - 0x00007ffd9c329000 	C:\Python39\lib\site-packages\tensorflow\python\lib\core\_pywrap_py_func.pyd
+0x00007ffd84be0000 - 0x00007ffd84f4b000 	C:\Python39\lib\site-packages\tensorflow\python\client\_pywrap_events_writer.pyd
+0x00007ffd84460000 - 0x00007ffd84bd2000 	C:\Python39\lib\site-packages\tensorflow\python\profiler\internal\_pywrap_profiler.pyd
+0x00007ffdd51c0000 - 0x00007ffdd51ca000 	C:\Python39\DLLs\_multiprocessing.pyd
+0x00007ffd840f0000 - 0x00007ffd84456000 	C:\Python39\lib\site-packages\tensorflow\python\client\_pywrap_device_lib.pyd
+0x00007ffd83dd0000 - 0x00007ffd840e8000 	C:\Python39\lib\site-packages\PIL\_imaging.cp39-win_amd64.pyd
+0x00007ffdd1620000 - 0x00007ffdd1630000 	C:\Python39\lib\site-packages\h5py\_errors.cp39-win_amd64.pyd
+0x00007ffd83a90000 - 0x00007ffd83dcb000 	C:\Python39\lib\site-packages\h5py\hdf5.dll
+0x00007ffd9bb30000 - 0x00007ffd9bb4a000 	C:\Python39\lib\site-packages\h5py\zlib.dll
+0x00007ffd999c0000 - 0x00007ffd999db000 	C:\Python39\lib\site-packages\h5py\h5.cp39-win_amd64.pyd
+0x00007ffd99980000 - 0x00007ffd999bc000 	C:\Python39\lib\site-packages\h5py\defs.cp39-win_amd64.pyd
+0x00007ffd98c60000 - 0x00007ffd98c81000 	C:\Python39\lib\site-packages\h5py\hdf5_hl.dll
+0x00007ffd98c40000 - 0x00007ffd98c5f000 	C:\Python39\lib\site-packages\h5py\_objects.cp39-win_amd64.pyd
+0x00007ffd98c10000 - 0x00007ffd98c40000 	C:\Python39\lib\site-packages\h5py\_conv.cp39-win_amd64.pyd
+0x00007ffd98940000 - 0x00007ffd98955000 	C:\Python39\lib\site-packages\h5py\h5r.cp39-win_amd64.pyd
+0x00007ffd91130000 - 0x00007ffd91185000 	C:\Python39\lib\site-packages\h5py\h5t.cp39-win_amd64.pyd
+0x00007ffd90f00000 - 0x00007ffd90f52000 	C:\Python39\lib\site-packages\h5py\h5p.cp39-win_amd64.pyd
+0x00007ffd98920000 - 0x00007ffd9893b000 	C:\Python39\lib\site-packages\h5py\h5s.cp39-win_amd64.pyd
+0x00007ffd94480000 - 0x00007ffd94491000 	C:\Python39\lib\site-packages\h5py\utils.cp39-win_amd64.pyd
+
+VM Arguments:
+jvm_args: -Dfile.encoding=UTF8 -ea -Xmx1024m 
+java_command: <unknown>
+java_class_path (initial): C:\Python39\Lib\site-packages\konlpy\java;C:\Python39\Lib\site-packages\konlpy\java\bin;C:\Python39\Lib\site-packages\konlpy\java\;C:\Python39\Lib\site-packages\konlpy\java\jhannanum-0.8.4.jar;C:\Python39\Lib\site-packages\konlpy\java\kkma-2.0.jar;C:\Python39\Lib\site-packages\konlpy\java\aho-corasick.jar;C:\Python39\Lib\site-packages\konlpy\java\shineware-common-1.0.jar;C:\Python39\Lib\site-packages\konlpy\java\shineware-ds-1.0.jar;C:\Python39\Lib\site-packages\konlpy\java\komoran-3.0.jar;C:\Python39\Lib\site-packages\konlpy\java\snakeyaml-1.12.jar;C:\Python39\Lib\site-packages\konlpy\java\scala-library-2.12.3.jar;C:\Python39\Lib\site-packages\konlpy\java\open-korean-text-2.1.0.jar;C:\Python39\Lib\site-packages\konlpy\java\twitter-text-1.14.7.jar;C:\Python39\Lib\site-packages\konlpy\java\
+Launcher Type: generic
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\java\jdk1.8.0_311\bin
+PATH=C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python39\Scripts\;C:\Python39\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\java\jdk1.8.0_311\bin\bin\;C:\Users\dudtj\AppData\Local\Microsoft\WindowsApps;C:\Users\dudtj\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\dudtj\AppData\Roaming\npm;
+USERNAME=dudtj
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 158 Stepping 9, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10.0 , 64 bit Build 19041 (10.0.19041.1348)
+
+CPU:total 8 (initial active 8) (4 cores per cpu, 2 threads per core) family 6 model 158 stepping 9, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, 3dnowpref, lzcnt, ht, tsc, tscinvbit, bmi1, bmi2, adx
+
+Memory: 4k page, physical 8269872k(1815444k free), swap 18805340k(2873368k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (25.311-b11) for windows-amd64 JRE (1.8.0_311-b11), built on Sep 27 2021 05:15:14 by "java_re" with MS VC++ 15.9 (VS2017)
+
+time: Thu Nov 25 23:10:28 2021
+timezone: 대한민국 표준시
+elapsed time: 0.616842 seconds (0d 0h 0m 0s)
+

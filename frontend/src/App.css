@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: baemin;
 }
 
 .App-logo {
@@ -63,6 +64,8 @@ a:hover { color: blue; text-decoration: underline;}
   height: 50px;
   border-radius: 10px;
   background-color: thistle;
+  font-family: baemin;
+  font-size: 30px;
 }
 
 .search-bar > button {
@@ -70,6 +73,11 @@ a:hover { color: blue; text-decoration: underline;}
   height: 50px;
   border-radius: 10px;
   background-color: orange;
+  font-family: baemin;
+}
+
+.another {
+  background-color: lemonchiffon;
 }
 /* spinner css code */
 /* content css code */
