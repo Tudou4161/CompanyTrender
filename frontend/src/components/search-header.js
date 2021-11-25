@@ -20,7 +20,7 @@ const SearchHeader = (props) => {
     return (
         <div className="search-header">
             <div className="title">
-                <h1>📊Trender</h1>
+                <h1>📊C-Trender</h1>
             </div>
             <div className="search-bar">
                 <input type="text" placeholder="검색어를 입력해주세요." onChange={searchKeywordChange} />

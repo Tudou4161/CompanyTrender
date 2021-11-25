@@ -106,7 +106,7 @@ class FunctionPackage:
         #1. 크롤링 멀티스레딩
         start1 = t.time()
         headers = []
-        with ThreadPoolExecutor(16) as exec:
+        with ThreadPoolExecutor(max_workers=16) as exec:
             for one_page in exec.map(self.crawler, list(range(1, self.max_page))):
                 for elem in one_page:
                     headers.append(elem)
@@ -124,7 +124,7 @@ class FunctionPackage:
 
         toE, toF = [], []
         start2 = t.time()
-        with ThreadPoolExecutor(16) as exec:
+        with ThreadPoolExecutor(max_workers=16) as exec:
             for morph, simple in zip(exec.map(self.morphs_token, headers, stopwords), exec.map(self.simple_token, headers, stopwords)):
                 toE.append(morph)
                 toF.append(simple)
