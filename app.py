@@ -1,15 +1,5 @@
 # app.py
-from keras.preprocessing.sequence import pad_sequences
-import requests 
-from bs4 import BeautifulSoup as bs
-import re 
-from konlpy.tag import Kkma 
-import numpy as np
-import pickle
-import tensorflow as tf
 from flask import Flask, render_template, jsonify, request
-import time
-import datetime
 from source.tools import FunctionPackage
 #Flask 객체 인스턴스 생성
 app = Flask(__name__)
